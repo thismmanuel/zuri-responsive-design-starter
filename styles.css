@@ -345,3 +345,92 @@ div.footer h6 {
     font-size: 1rem;
     padding-top: 6rem;
 }
+
+/* MERIA QUERY */
+/* TABLETS */
+@media screen and (max-width: 768px){
+    div.nav-bar{
+        padding: 1rem 3rem;
+    }
+
+    ul.nav-links{
+        flex-direction: column;
+        float: :none;
+        clear: left;
+    }
+    div.hero-section{
+        padding: 8rem 6rem;
+    }
+    div.background h4{
+        padding: 1rem 2rem 1rem 0rem;
+    }
+    div.background p{
+        display: flexbox;
+        padding: 0;
+    }
+    div.hero-background{
+        padding: 20% 10%;
+    }
+    div.background{
+        width: 100%;
+        height: auto;
+    }
+    div.hero-background-pos{
+        display: none;
+    }
+    div.snapshot-team p{
+        width: 88%;
+        margin: 0 6%;
+    }
+    div.snapshot-box-content{
+        display: flexbox;
+    }
+    div.box1{
+        width: 48%;
+    }
+    div.box3{
+        width: 48%;
+    }
+}
+
+
+
+/* MOBILES */
+@media screen and (max-width: 480px){
+    div.nav-bar{
+        padding: 1rem 1rem;
+    }
+    div.hero-section{
+        padding: 10% 15%;
+    }
+    div.snapshot-box-content{
+        display: block;
+    }
+    div.box1{
+        width: fit-content;
+    }
+    div.box3{
+        width: fit-content;
+    }
+    div.footer{
+        padding: 1rem;
+    }
+    div.footer-input{
+        display: inline-block;
+        padding: 48px 10%;
+    }
+    input[type="text"]{
+        margin: 8px 0;
+        width: 100%;
+    }
+    input[type="email"]{
+        margin: 8px 0;
+        width: 100%;
+    }
+    div.footer-textarea{
+        padding: 0;
+    }
+    textarea{
+        width: 80%;
+    }
+}
