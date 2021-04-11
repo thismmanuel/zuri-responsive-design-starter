@@ -351,12 +351,35 @@ div.footer h6 {
 @media screen and (max-width: 768px){
     div.nav-bar{
         padding: 1rem 3rem;
+        position: relative;
     }
-
+    .fas{
+        position: relative;
+        /* left: 20px; */
+    }
+    .fa-color{
+        color: white;
+    }
     ul.nav-links{
         flex-direction: column;
-        float: :none;
+        float: none;
         clear: left;
+        overflow: hidden;
+        height: 0; 
+    }
+    ul.nav-links.open{
+        height: auto;
+    }
+    ul.nav-links li{
+        float: none;
+        text-align: left;
+        width: 100%;
+        margin: 0%;
+    }
+    ul.nav-links li a{
+        padding: 10px;
+        display: block;
+        border-bottom: 1px solid #404040;
     }
     div.hero-section{
         padding: 8rem 6rem;
@@ -432,5 +455,10 @@ div.footer h6 {
     }
     textarea{
         width: 80%;
+    }
+}
+@media screen and (min-width: 769px){
+    .burger-nav{
+        display: none;
     }
 }
